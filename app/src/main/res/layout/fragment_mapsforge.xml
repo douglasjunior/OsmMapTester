@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.github.douglasjunior.osmMapTester.MapsforgeFragment">
+
+        <com.github.douglasjunior.osmMapTester.mapsforge.RotateView
+            android:id="@+id/rotateView"
+            class="com.github.douglasjunior.osmMapTester.mapsforge.RotateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <org.mapsforge.map.android.view.MapView
+                android:id="@+id/mapView"
+                class="org.mapsforge.map.android.view.MapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.github.douglasjunior.osmMapTester.mapsforge.RotateView>
+
+        <Button
+            android:id="@+id/btnTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:text="Track"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:text="Reset"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="false"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbRotation"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:max="360"
+            android:progress="0"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="azimut: 0\npitch: 0\nroll: 0"
+        android:id="@+id/tvCompass"
+        android:layout_alignTop="@+id/btnTrack"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Gps Map Tester</string>
+
+    <string name="title_fragment_osmdroid">OsmDroid</string>
+    <string name="title_fragment_mapsforge">MapsForge</string>
+
+    <string name="navigation_drawer_open">Abrir a barra de navegação</string>
+    <string name="navigation_drawer_close">Fechar a barra de navegação</string>
+
+    <string name="action_example">Exemplo de ação!</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="title_activity_main">Gps Map Tester</string>
+</resources>
